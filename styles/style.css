@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+:root {
+  --clr-1: hsl(225, 100%, 94%);
+  --clr-2: hsl(245, 75%, 52%);
+  --clr-3: hsl(225, 100%, 98%);
+  --clr-4: hsl(224, 23%, 55%);
+  --clr-5: hsl(223, 47%, 23%);
+  --clr-6: hsl(0, 0%, 100%);
+}
+.txt-main {
+  font-size: 1.75rem;
+  font-weight: 900;
+  padding-bottom: 17px;
+  color: var(--clr-5);
+}
+.txt-p {
+  color: var(--clr-4);
+  font-size: 1.04rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+.txt-plan {
+  font-weight: 900;
+  color: var(--clr-5);
+  padding-left: 2px;
+  padding-bottom: 0px;
+}
+.txt-value {
+  color: var(--clr-4);
+  font-weight: 500;
+  padding-left: 3px;
+  padding-bottom: 3px;
+}
+body {
+  background: url("../images/pattern-background-desktop.svg") no-repeat
+    var(--clr-1);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-6);
+  max-width: 450px;
+  max-height: 700px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 15px 20px hsla(245, 75%, 52%, 0.15);
+}
+figure img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+section#box_content {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 49px 49px;
+  align-items: center;
+}
+section#box_title {
+  text-align: center;
+}
+section#box_plan {
+  background-color: var(--clr-3);
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0px 20px;
+  border-radius: 8px;
+}
+div.plan-txt {
+  display: flex;
+  align-items: center;
+}
+div.plan {
+  padding-left: 20px;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+section#box_plan a {
+  font-weight: 700;
+  font-size: 0.94rem;
+  padding-right: -7px;
+}
+section#box_button {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.btn-pay {
+  width: 100%;
+  height: 50px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--clr-6);
+  background: var(--clr-2);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px 3px hsla(245, 75%, 52%, 0.2);
+}
+.btn-can {
+  background: none;
+  border: none;
+  color: var(--clr-4);
+  font-weight: 900;
+  font-size: 0.95rem;
+  margin-top: 32px;
+}
+footer {
+  position: absolute;
+  margin-top: 100vh;
+  text-align: center;
+}
+footer a {
+  color: var(--clr-2);
+  text-decoration: none;
+}
+@media only screen and (max-width: 425px) {
+  body {
+    background: url("../images/pattern-background-mobile.svg") no-repeat
+      var(--clr-3);
+    background-size: cover;
+  }
+}
