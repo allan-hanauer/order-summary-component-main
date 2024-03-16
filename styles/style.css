@@ -58,6 +58,7 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  animation: main 0.4s ease-in-out;
   box-shadow: 0px 15px 20px hsla(245, 75%, 52%, 0.15);
 }
 figure img {
@@ -106,6 +107,9 @@ section#box_button {
   flex-direction: column;
   margin-top: 30px;
 }
+.btn-pay:hover {
+  background-color: var(--clr-4);
+}
 .btn-pay {
   width: 100%;
   height: 50px;
@@ -114,7 +118,9 @@ section#box_button {
   color: var(--clr-6);
   background: var(--clr-2);
   border: none;
+  cursor: pointer;
   border-radius: 10px;
+  transition: 0.5s;
   box-shadow: 0px 15px 20px 3px hsla(245, 75%, 52%, 0.2);
 }
 .btn-can {
@@ -123,21 +129,32 @@ section#box_button {
   color: var(--clr-4);
   font-weight: 900;
   font-size: 0.95rem;
+  cursor: pointer;
   margin-top: 32px;
 }
 footer {
   position: absolute;
-  margin-top: 100vh;
+  margin-top: 98vh;
   text-align: center;
 }
 footer a {
   color: var(--clr-2);
   text-decoration: none;
+  transition: 0.4s;
+}
+footer a:hover {
+  color: var(--clr-4);
 }
 @media only screen and (max-width: 425px) {
   body {
     background: url("../images/pattern-background-mobile.svg") no-repeat
       var(--clr-3);
     background-size: cover;
+  }
+}
+@keyframes main {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
   }
 }
